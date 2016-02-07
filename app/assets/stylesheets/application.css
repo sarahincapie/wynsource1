@@ -13,3 +13,98 @@
  *= require_tree .
  *= require_self
  */
+ body {
+   font-family: 'Rajdhani';
+   font-weight: bold;
+   padding: 1em 2em;
+   font-size: 18px;
+   background: #000000;
+   color: #aaa
+ }
+
+ .header h1,h2 {
+   text-align: center;
+   font-weight: 200;
+   margin: 0.4em 0;
+ }
+ h1 { font-size: 3.5em; }
+ h2 {
+   color: #ec4f5c;
+   font-size: 2em;
+ }
+
+.table {
+  font-family: Rajdhani;
+  font-size: 30px;
+}
+
+.fa-plus {
+  text-align: center;
+  color: #E74C3C;
+}
+.fa-puzzle-piece {
+  color: #1e88e5;
+}
+.fa-backward {
+  color: #1e88e5;
+  margin-left: 50px;
+}
+.fa-search-plus {
+  color: #1e88e5;
+
+}
+
+.title {
+  font-size: 40px;
+}
+
+.title strong {
+  color: #1de9b6;
+  font-size: 40px;
+  font-family: Rajdhani;
+}
+
+.review h3 {
+  font-size: 40px;
+  color: #1de9b6;
+}
+
+.review {
+  text-align: center;
+}
+
+.field {
+  background-color
+}
+.edit h1 {
+  color: #1de9b6;
+}
+.edit {
+  text-align: center;
+}
+
+.field label {
+  color: #ec4f5c;
+}
+.choice {
+  padding-top: 50px;
+}
+.create {
+  padding-top: 75px;
+}
+.login {
+  text-align: center;
+}
+.login h2 {
+  color: #1de9b6;
+}
+.new {
+  text-align: center;
+}
+.new h1 {
+  color: #1de9b6;
+}
+.back {
+  padding-top: 50px;
+  margin-right: 2.5em;
+}

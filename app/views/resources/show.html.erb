@@ -1,7 +1,8 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 
-
+<div class="title">
 <p>
   <strong>Name:</strong>
   <%= @resource.name %>
@@ -11,9 +12,11 @@
   <strong>Description:</strong>
   <%= @resource.description %>
 </p>
+</div>
+<br>
 
 
-
+<div class="review">
 <h3>Reviews</h3>
 <% @resource.reviews.each do |review| %>
   <p>
@@ -30,7 +33,14 @@
 <h3>New Review</h3>
 
 <%= render 'reviews/form' %>
+<br>
+<br>
 
-
-<%= link_to 'Edit', edit_resource_path(@resource) %> |
-<%= link_to 'Back', resources_path %>
+<%= link_to edit_resource_path(@resource) do %>
+<i class="fa fa-puzzle-piece fa-2x"> Edit</i>
+<% end %>
+<%= link_to resources_path do %>
+<i class="fa fa-backward fa-2x"> Back</i>
+<% end %>
+</div>
+</div>
