@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Wynsource</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=Rajdhani|Lobster|Orbitron' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Rajdhani|Lobster|Orbitron' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -19,9 +19,9 @@
 
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-<%= javascript_include_tag  "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag  "application", "data-turbolinks-track" => true %>
 
- <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %>
 
 </head>
 
@@ -30,25 +30,25 @@
   <div class="header">
     <h1>Wynsource is
       <span
-         class="txt-rotate"
-         data-period="2000"
-         data-rotate='[ "accesibility.", "simplicity.", "for you." ]'></span>
+      class="txt-rotate"
+      data-period="2000"
+      data-rotate='[ "accesibility.", "simplicity.", "for you." ]'></span>
     </h1>
     <h2>A centralized source created for you.</h2>
 
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
-<% if user_signed_in? %>
-  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-<% else %>
-  <%= link_to "Sign In", new_user_session_path %>
-  <%= link_to('Login', new_user_session_path)  %>
+    <% if user_signed_in? %>
+    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+    <% else %>
+    <%= link_to "Sign In", new_user_session_path %>
+    <%= link_to('Login', new_user_session_path)  %>
 
- <% end %>
+    <% end %>
 
 
-<%= yield %>
-</div>
+    <%= yield %>
+  </div>
 </body>
 </html>
