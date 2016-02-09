@@ -31,7 +31,11 @@
     <div class="container">
 
       <% if user_signed_in? %>
-      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <i class="fa fa-sign-out "></i>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete)  %>
+      
+
+
       <% else %>
       <%= link_to new_user_registration_path do %>
         <i class="fa fa-user-plus"> Sign Up</i>
@@ -39,6 +43,7 @@
       <%= link_to new_user_session_path do  %>
         <i class="fa fa-sign-in"> Sign In</i>
           <% end %>
+
 
       <% end %>
       <p class="notice"><%= notice %></p>
