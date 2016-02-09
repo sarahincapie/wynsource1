@@ -81,4 +81,7 @@ class ResourcesController < ApplicationController
     def resource_params
       params.require(:resource).permit(:name, :description)
     end
+
+
+
 end

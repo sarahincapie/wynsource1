@@ -18,7 +18,6 @@
     <% @resources.each do |resource| %>
       <tr>
         <td><%= resource.name %></td>
-        <td><%= resource.description %></td>
         <td><%= link_to 'Show', resource %></td>
         <% if resource.user == current_user %>
         <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
