@@ -27,6 +27,23 @@
 
 
 <body>
+  <div class="logic">
+    <div class="container">
+
+      <% if user_signed_in? %>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+      <% else %>
+      <%= link_to new_user_registration_path do %>
+        <i class="fa fa-user-plus"> Sign Up</i>
+        <% end %>
+      <%= link_to new_user_session_path do  %>
+        <i class="fa fa-sign-in"> Sign In</i>
+          <% end %>
+
+      <% end %>
+      <p class="notice"><%= notice %></p>
+    </div>
+  </div>
   <div class="header">
     <h1>Wynsource is
       <span
@@ -34,18 +51,12 @@
       data-period="2000"
       data-rotate='[ "accesibility.", "simplicity.", "for you." ]'></span>
     </h1>
-    <h2>A centralized source created for you.</h2>
+    <h2>a centralized source created for you.</h2>
 
-    <p class="notice"><%= notice %></p>
+
     <p class="alert"><%= alert %></p>
 
-    <% if user_signed_in? %>
-    <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-    <% else %>
-    <%= link_to "Sign In", new_user_session_path %>
-    <%= link_to('Login', new_user_session_path)  %>
 
-    <% end %>
 
 
     <%= yield %>

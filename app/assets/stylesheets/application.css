@@ -111,3 +111,14 @@
 .signup h2 {
   color: #1de9b6;
 }
+.logic {
+  display: inline;
+  padding-left: 20px;
+}
+.fa-user-plus {
+  color: #1de9b6;
+  padding-right: 15px;
+}
+.fa-sign-in {
+  color: #1de9b6;
+}
