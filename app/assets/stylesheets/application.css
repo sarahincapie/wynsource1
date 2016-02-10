@@ -125,3 +125,14 @@
 .fa-sign-out {
   color: #1de9b6;
 }
+#resource_description {
+  width: 50%;
+  padding-bottom: 25px;
+}
+#review_comment {
+  width: 50%;
+  padding-bottom: 25px;
+}
+#resource_name {
+  padding-bottom: 10px;
+}
